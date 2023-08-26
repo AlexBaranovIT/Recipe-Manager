@@ -6,7 +6,7 @@ class RecipeManager:
     def __init__(self):
         self.conn = sqlite3.connect('recipes.db')
         self.cursor = self.conn.cursor()
-
+ 
         # Create the table if it doesn't exist
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS recipes (
